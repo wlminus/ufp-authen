@@ -1,0 +1,36 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.wlminus.ufp"
+    },
+    "jhipsterVersion": "6.5.1",
+    "applicationType": "monolith",
+    "baseName": "authen",
+    "packageName": "com.wlminus.ufp",
+    "packageFolder": "com/wlminus/ufp",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "oracle",
+    "prodDatabaseType": "oracle",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZjJlOGZiYTAzMzc1YzUzYzA3YjM0ODdkMWIwMTY1ZjgzNjQ5ZDhkMTA3NDk1M2ZhMjFjZjYwOTA3NmJiOTFjYTQ3N2NhM2Q3NTQ3NTU0YzkxNTQzZjJhNTI0MDhlNDIzMTQ0NjA2MzJlMzIyOThhODhkMzc5YmRkMDdkNzc3ZWI=",
+    "embeddableLaunchScript": false,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true
+  }
+}
