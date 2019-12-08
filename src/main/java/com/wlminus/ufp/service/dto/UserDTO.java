@@ -1,14 +1,14 @@
 package com.wlminus.ufp.service.dto;
 
 import com.wlminus.ufp.config.Constants;
-
 import com.wlminus.ufp.domain.Authority;
+import com.wlminus.ufp.domain.Student;
 import com.wlminus.ufp.domain.User;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-
-import javax.validation.constraints.*;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.time.Instant;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -53,6 +53,8 @@ public class UserDTO {
 
     private Set<String> authorities;
 
+    private Student student;
+
     public UserDTO() {
         // Empty constructor needed for Jackson.
     }
@@ -73,6 +75,7 @@ public class UserDTO {
         this.authorities = user.getAuthorities().stream()
             .map(Authority::getName)
             .collect(Collectors.toSet());
+        this.student = user.getStudent();
     }
 
     public Long getId() {
@@ -177,6 +180,14 @@ public class UserDTO {
 
     public void setAuthorities(Set<String> authorities) {
         this.authorities = authorities;
+    }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
     }
 
     @Override

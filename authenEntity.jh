@@ -1,0 +1,12 @@
+entity Student {
+	studentCode String required unique,
+    name String,
+    dob String,
+    className String,
+    program String
+}
+relationship OneToOne {
+	User{student} to Student
+}
+
+paginate Student with pagination

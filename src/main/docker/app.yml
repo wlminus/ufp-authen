@@ -9,4 +9,4 @@ services:
       - SPRING_DATASOURCE_URL=jdbc:oracle:thin:@authen-oracle:1521:authen
       - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
     ports:
-      - 8080:8080
+      - 9621:9621
